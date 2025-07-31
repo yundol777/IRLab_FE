@@ -2,8 +2,6 @@
 @use '../src/styles/font.scss' as *;
 @use '../src/styles/reset.scss' as *;
 
-h1,
-h2,
 p,
 a {
   color: $gray-3;
@@ -42,7 +40,7 @@ a {
     background: rgba(0, 0, 0, 0.1);
   }
 
-  p {
+  h1 {
     font-family: $font-point;
     font-size: 28px;
     line-height: 36px;
@@ -141,9 +139,11 @@ main {
 
 .section_title {
   margin: 0;
-  font-family: $font-point;
-  font-size: 40px;
-  line-height: 48px;
+  h2 {
+    font-family: $font-point;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .lnb {
