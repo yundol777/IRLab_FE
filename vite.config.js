@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         members: resolve(__dirname, 'members/index.html'),
+        topics: resolve(__dirname, 'topics/index.html'),
       },
     },
   },
