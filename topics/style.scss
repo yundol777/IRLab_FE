@@ -8,6 +8,12 @@ a {
   font-family: $font-default;
 }
 
+button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
 .gnb {
   display: flex;
   position: fixed;
@@ -151,7 +157,7 @@ main {
   flex-direction: row;
   justify-content: center;
 
-  a {
+  button {
     font-size: 14px;
     font-weight: $bold;
     text-decoration-line: none;
@@ -197,7 +203,7 @@ main {
       transform-origin: left;
     }
 
-    a {
+    button {
       color: $gray-1;
     }
   }
@@ -207,7 +213,7 @@ main {
   background-color: $primary;
   transition: all 0.2s ease;
 
-  a {
+  button {
     color: $gray-1;
   }
 }
@@ -261,7 +267,7 @@ article {
   justify-content: center;
   padding: 50px 0;
 
-  a {
+  button {
     font-size: 20px;
     font-weight: $medium;
     text-decoration-line: none;
