@@ -75,7 +75,7 @@ button {
     transition: all 0.3s ease;
   }
 
-  span {
+  .gnb_underline {
     position: absolute;
     display: block;
     width: 100%;
@@ -90,7 +90,7 @@ button {
     transition: transform 0.3s ease;
   }
 
-  &:hover span {
+  &:hover .gnb_underline {
     transform: scaleX(1);
     transform-origin: left;
   }
@@ -177,7 +177,7 @@ main {
   height: 24px;
   position: relative;
 
-  span {
+  .lnb_highlight {
     position: absolute;
     display: block;
     width: 100%;
@@ -190,13 +190,13 @@ main {
     transition: transform 0.2s ease;
   }
 
-  &:hover span {
+  &:hover .lnb_highlight {
     transform: scaleX(1);
     transform-origin: left;
   }
 
   &:active {
-    span {
+    .lnb_highlight {
       background-color: $primary;
       opacity: 1;
       transform: scaleX(1);
