@@ -32,7 +32,7 @@ button {
   transition: all 0.5s ease 0.2s;
 }
 
-.gnb_title {
+.gnb__title {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -53,13 +53,13 @@ button {
   }
 }
 
-.gnb_list {
+.gnb__list {
   display: flex;
   align-items: center;
   gap: 32px;
 }
 
-.gnb_item01 {
+.gnb__item {
   padding: 4px 0;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ button {
     transition: all 0.3s ease;
   }
 
-  .gnb_underline {
+  .gnb__underline {
     position: absolute;
     display: block;
     width: 100%;
@@ -90,13 +90,13 @@ button {
     transition: transform 0.3s ease;
   }
 
-  &:hover .gnb_underline {
+  &:hover .gnb__underline {
     transform: scaleX(1);
     transform-origin: left;
   }
 }
 
-.gnb_item02 {
+.gnb__button {
   display: flex;
   padding: 8px 16px;
   justify-content: center;
@@ -132,7 +132,7 @@ main {
   justify-content: center;
 }
 
-.section {
+.topic {
   max-width: 1160px;
   width: 100%;
   box-sizing: border-box;
@@ -142,7 +142,7 @@ main {
   gap: 60px;
 }
 
-.section_title {
+.topic__title {
   margin: 0;
   h2 {
     font-family: $font-point;
@@ -151,7 +151,7 @@ main {
   }
 }
 
-.lnb_list {
+.lnb__list {
   display: flex;
   gap: 32px;
   flex-direction: row;
@@ -166,7 +166,7 @@ main {
   }
 }
 
-.lnb_item {
+.lnb__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +177,7 @@ main {
   height: 24px;
   position: relative;
 
-  .lnb_highlight {
+  .lnb__highlight {
     position: absolute;
     display: block;
     width: 100%;
@@ -190,13 +190,13 @@ main {
     transition: transform 0.2s ease;
   }
 
-  &:hover .lnb_highlight {
+  &:hover .lnb__highlight {
     transform: scaleX(1);
     transform-origin: left;
   }
 
   &:active {
-    .lnb_highlight {
+    .lnb__highlight {
       background-color: $primary;
       opacity: 1;
       transform: scaleX(1);
@@ -209,7 +209,7 @@ main {
   }
 }
 
-.lnb_fix {
+.lnb__fix {
   background-color: $primary;
   transition: all 0.2s ease;
 
@@ -232,7 +232,7 @@ article {
   }
 }
 
-.card {
+.topic__card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -262,7 +262,7 @@ article {
   }
 }
 
-.view_more {
+.view__more {
   display: flex;
   justify-content: center;
   padding: 50px 0;
@@ -288,7 +288,7 @@ footer {
   background: $gray-4;
 }
 
-.footer_txt {
+.footer__txt {
   display: flex;
   height: 100px;
   justify-content: center;

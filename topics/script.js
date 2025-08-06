@@ -68,19 +68,19 @@ const data = [
   },
 ];
 
-const output = document.querySelector('article');
+const output = document.getElementById('topic__content');
 const all = document.getElementById('all');
 const events = document.getElementById('events');
 const papers = document.getElementById('papers');
 
 all.addEventListener('click', function () {
-  all.classList.add('lnb_fix');
-  events.classList.remove('lnb_fix');
-  papers.classList.remove('lnb_fix');
+  all.classList.add('lnb__fix');
+  events.classList.remove('lnb__fix');
+  papers.classList.remove('lnb__fix');
   output.innerHTML = '';
   data.forEach((userData) => {
     output.innerHTML += `
-      <div class="card changeimg">
+      <div class="topic__card">
       <img src="${userData.img}">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
@@ -90,9 +90,9 @@ all.addEventListener('click', function () {
 });
 
 data.forEach((userData) => {
-  all.classList.add('lnb_fix');
+  all.classList.add('lnb__fix');
   output.innerHTML += `
-    <div class="card changeimg">
+    <div class="topic__card">
     <img src="${userData.img}">
     <p>${userData.tag} | ${userData.date}</p>
     <p>${userData.title}</p>
@@ -102,13 +102,13 @@ data.forEach((userData) => {
 
 let eventData = data.filter((value) => value.tag == 'event');
 events.addEventListener('click', function () {
-  all.classList.remove('lnb_fix');
-  events.classList.add('lnb_fix');
-  papers.classList.remove('lnb_fix');
+  all.classList.remove('lnb__fix');
+  events.classList.add('lnb__fix');
+  papers.classList.remove('lnb__fix');
   output.innerHTML = '';
   eventData.forEach((userData) => {
     output.innerHTML += `
-      <div class="card changeimg">
+      <div class="topic__card">
       <img src="${userData.img}">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
@@ -119,13 +119,13 @@ events.addEventListener('click', function () {
 
 let paperData = data.filter((value) => value.tag == 'paper');
 papers.addEventListener('click', function () {
-  all.classList.remove('lnb_fix');
-  events.classList.remove('lnb_fix');
-  papers.classList.add('lnb_fix');
+  all.classList.remove('lnb__fix');
+  events.classList.remove('lnb__fix');
+  papers.classList.add('lnb__fix');
   output.innerHTML = '';
   paperData.forEach((userData) => {
     output.innerHTML += `
-      <div class="card changeimg">
+      <div class="topic__card">
       <img src="${userData.img}">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
