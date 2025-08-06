@@ -1,16 +1,3 @@
-var stopScroll = window.pageYOffset;
-var topbar = document.querySelector('.gnb');
-
-window.onscroll = function () {
-  var moveScroll = window.pageYOffset;
-  if (stopScroll > moveScroll) {
-    topbar.style.top = '0';
-  } else {
-    topbar.style.top = '-80px';
-  }
-  stopScroll = moveScroll;
-};
-
 const data = [
   {
     img: '../src/assets/images/humanImage.jpg',
