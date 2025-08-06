@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="gnb">
+        <div class="gnb__title">
+          <img src="../src/assets/images/humanImage.jpg" alt="IR Lab logo" />
+          <h1>IR Lab</h1>
+        </div>
+        <ul class="gnb__list">
+          <li class="gnb__item">
+            <a href="#">MEMBERS</a>
+            <span class="gnb__underline"></span>
+          </li>
+          <li class="gnb__item">
+            <a href="#">PROJECTS</a>
+            <span class="gnb__underline"></span>
+          </li>
+          <li class="gnb__item">
+            <a href="#">RESEARCH</a>
+            <span class="gnb__underline"></span>
+          </li>
+          <li class="gnb__item">
+            <a href="#">TOPICS</a>
+            <span class="gnb__underline"></span>
+          </li>
+          <li class="gnb__button">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="topic">
+        <div class="topic__title"><h2>TOPICS</h2></div>
+        <ul class="lnb__list">
+          <li class="lnb__item" id="all">
+            <button>ALL</button>
+            <span class="lnb__highlight"></span>
+          </li>
+          <li class="lnb__item" id="events">
+            <button>EVENTS</button>
+            <span class="lnb__highlight"></span>
+          </li>
+          <li class="lnb__item" id="papers">
+            <button>PAPERS</button>
+            <span class="lnb__highlight"></span>
+          </li>
+        </ul>
+        <article id="topic__content"></article>
+        <div class="view__more"><button>View More +</button></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__txt">
+        <p>Contact us at: contact@irlab.edu</p>
+        <p>Follow us on social media</p>
+        <p>© 2023 IR Lab. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
