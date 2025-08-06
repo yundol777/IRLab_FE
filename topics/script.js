@@ -81,7 +81,7 @@ all.addEventListener('click', function () {
   data.forEach((userData) => {
     output.innerHTML += `
       <div class="topic__card">
-      <img src="${userData.img}">
+      <img src="${userData.img}" alt="card priview image">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
       </div>
@@ -93,7 +93,7 @@ data.forEach((userData) => {
   all.classList.add('lnb__fix');
   output.innerHTML += `
     <div class="topic__card">
-    <img src="${userData.img}">
+    <img src="${userData.img}" alt="card priview image">
     <p>${userData.tag} | ${userData.date}</p>
     <p>${userData.title}</p>
     </div>
@@ -109,7 +109,7 @@ events.addEventListener('click', function () {
   eventData.forEach((userData) => {
     output.innerHTML += `
       <div class="topic__card">
-      <img src="${userData.img}">
+      <img src="${userData.img}" alt="card priview image">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
       </div>
@@ -126,7 +126,7 @@ papers.addEventListener('click', function () {
   paperData.forEach((userData) => {
     output.innerHTML += `
       <div class="topic__card">
-      <img src="${userData.img}">
+      <img src="${userData.img}" alt="card priview image">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
       </div>
