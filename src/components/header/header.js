@@ -30,15 +30,15 @@ gnb.innerHTML += `
 </nav>
 `;
 
-var gnb__bar = document.querySelector('.gnb__bar');
+var gnbBar = document.querySelector('.gnb__bar');
 
 var stopScroll = window.pageYOffset;
 window.onscroll = function () {
   var moveScroll = window.pageYOffset;
   if (stopScroll > moveScroll) {
-    gnb__bar.style.top = '0';
+    gnbBar.classList.remove('gnb__bar__hidden');
   } else {
-    gnb__bar.style.top = '-80px';
+    gnbBar.classList.add('gnb__bar__hidden');
   }
   stopScroll = moveScroll;
 };
