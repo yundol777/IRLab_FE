@@ -33,20 +33,17 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   a {
     text-decoration-line: none;
     font-size: 14px;
     font-weight: $bold;
   }
+}
 
-  span {
-    display: block;
-    width: 100%;
-    bottom: 0;
-    height: 1px;
-    background-color: $gray-2;
-  }
+#underline {
+  border-bottom: 1px solid;
+  color: #d9d9d9;
+  padding-bottom: 16px;
 }
 
 .topic__title {
@@ -60,9 +57,14 @@ button {
   }
 }
 
-#tag {
-  font-size: 16px;
-  font-weight: $bold;
+.tag {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  p {
+    font-size: 16px;
+    font-weight: $bold;
+  }
 }
 
 .topic__content {
