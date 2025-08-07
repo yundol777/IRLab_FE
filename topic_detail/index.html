@@ -4,8 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="../src/components/header/header.scss" />
+    <link rel="stylesheet" href="../src/components/footer/footer.scss" />
   </head>
   <body>
-    topic detail 페이지
+    <header class="gnb"></header>
+    <main class="main">
+      <article class="topic">
+        <div class="topic__back">
+          <a href="#">← Back to Index</a>
+          <span></span>
+        </div>
+        <p>Tag | 2025.07.01</p>
+        <div class="topic__title">
+          <h1>Topic Title</h1>
+          <div class="topic__content">
+            <div class="content__width">
+              <p>
+                TOKYO, June 2, 2025 – JCB Co., Ltd., Japan’s only global payment brand, is proud to
+                announce that its exclusive cardmember mobile app, the MyJCB App, has been honored
+                with the Gold Award in the Mobile Technologies, Applications, and Software Design
+                category at the A’ Design Award & Competition.
+              </p>
+              <p>
+                This recognition follows the app’s recent success at the iF DESIGN AWARD 2025,
+                making yet another significant milestone for the MyJCB App. The Gold Award is
+                bestowed upon designs that place within the top 3% of all submissions, reflecting an
+                exceptional standard of design excellence.
+              </p>
+              <p>
+                The app’s service design and UI/UX design were developed in collaboration with
+                FOURDIGIT Inc.
+              </p>
+              <img src="../src/assets/images/humanImage.jpg" alt="topic image" />
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+    <script src="../src/components/header/header.js"></script>
+    <script src="../src/components/footer/footer.js"></script>
   </body>
 </html>

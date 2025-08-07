@@ -1,0 +1,90 @@
+@use '../src/styles/variables.scss' as *;
+@use '../src/styles/font.scss' as *;
+@use '../src/styles/reset.scss' as *;
+
+p,
+a {
+  color: $gray-3;
+  font-family: $font-default;
+}
+
+button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.topic {
+  max-width: 1160px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 180px 32px;
+  gap: 60px;
+
+  p {
+    font-size: 14px;
+    font-weight: $bold;
+  }
+}
+
+.topic__back {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  a {
+    text-decoration-line: none;
+    font-size: 14px;
+    font-weight: $bold;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background-color: $gray-2;
+  }
+}
+
+.topic__title {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: $bold;
+  }
+  p {
+    font-size: 20px;
+    font-weight: $semibold;
+    line-height: 1.2;
+  }
+}
+
+.topic__content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.content__width {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  gap: 32px;
+
+  img {
+    max-height: 366px;
+    object-fit: cover;
+  }
+}
