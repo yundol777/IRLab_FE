@@ -27,11 +27,6 @@ button {
   flex-direction: column;
   padding: 180px 32px;
   gap: 60px;
-
-  p {
-    font-size: 14px;
-    font-weight: $bold;
-  }
 }
 
 .topic__back {
@@ -63,11 +58,11 @@ button {
     font-size: 40px;
     font-weight: $bold;
   }
-  p {
-    font-size: 20px;
-    font-weight: $semibold;
-    line-height: 1.2;
-  }
+}
+
+#tag {
+  font-size: 16px;
+  font-weight: $bold;
 }
 
 .topic__content {
@@ -86,5 +81,11 @@ button {
   img {
     max-height: 366px;
     object-fit: cover;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: $semibold;
+    line-height: 1.2;
   }
 }
