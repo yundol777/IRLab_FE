@@ -40,6 +40,39 @@ button {
   }
 }
 
+.topic__back__button {
+  :hover {
+    span {
+      &:nth-child(1) {
+        animation-name: move;
+        animation-duration: 0.2s;
+        animation-timing-function: ease-in-out;
+      }
+      &:nth-child(2) {
+        letter-spacing: 1.12px;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.button__style {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+
+  transition: all 0.2s ease;
+}
+
 #underline {
   border-bottom: 1px solid;
   color: #d9d9d9;
