@@ -25,11 +25,11 @@ button {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 180px 32px;
+  padding: 180px 0;
   gap: 60px;
 }
 
-.topic__back {
+.topic__header {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -40,7 +40,7 @@ button {
   }
 }
 
-.topic__back__button {
+.topic__back {
   :hover {
     span {
       &:nth-child(1) {
@@ -65,7 +65,7 @@ button {
   }
 }
 
-.button__style {
+.topic__back--style {
   display: flex;
   flex-direction: row;
   gap: 14px;
@@ -79,7 +79,7 @@ button {
   padding-bottom: 16px;
 }
 
-.topic__title {
+.topic__main {
   display: flex;
   flex-direction: column;
   gap: 120px;
@@ -91,7 +91,7 @@ button {
   }
 }
 
-.tag__and__date {
+.topic_meta {
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -106,13 +106,8 @@ button {
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-}
 
-.content__width {
-  display: flex;
-  flex-direction: column;
-  max-width: 720px;
-  gap: 32px;
+  padding: 0 220px;
 
   img {
     width: 100%;

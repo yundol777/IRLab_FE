@@ -11,10 +11,10 @@ let date = param.get('date');
 let title = param.get('title');
 // let content = param.get('content');
 
-const insertTag = document.getElementById('tag');
-const insertDate = document.getElementById('date');
-const insertTitle = document.getElementById('title');
-const insertContent = document.getElementById('content');
+const insertTag = document.querySelector('.topic__tag');
+const insertDate = document.querySelector('.topic__date');
+const insertTitle = document.querySelector('.topic__title');
+const insertContent = document.querySelector('.topic__content');
 
 insertTag.innerHTML += `
 ${tag}
