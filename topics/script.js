@@ -85,7 +85,7 @@ all.addEventListener('click', function () {
   output.innerHTML = '';
   data.forEach((userData) => {
     output.innerHTML += `
-      <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?img=${userData.img}&tag=${userData.tag}&date=${userData.date}&title=${userData.title}&content=${userData.content}'">
+      <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?tag=${userData.tag}&date=${userData.date}&title=${userData.title}'">
       <img src="${userData.img}" alt="card priview image">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
@@ -97,7 +97,7 @@ all.addEventListener('click', function () {
 data.forEach((userData) => {
   all.classList.add('lnb__fix');
   output.innerHTML += `
-    <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?img=${userData.img}&tag=${userData.tag}&date=${userData.date}&title=${userData.title}&content=${userData.content}'">
+    <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?tag=${userData.tag}&date=${userData.date}&title=${userData.title}'">
     <img src="${userData.img}" alt="card priview image">
     <p>${userData.tag} | ${userData.date}</p>
     <p>${userData.title}</p>
@@ -113,7 +113,7 @@ events.addEventListener('click', function () {
   output.innerHTML = '';
   eventData.forEach((userData) => {
     output.innerHTML += `
-      <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?img=${userData.img}&tag=${userData.tag}&date=${userData.date}&title=${userData.title}&content=${userData.content}'">
+      <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?tag=${userData.tag}&date=${userData.date}&title=${userData.title}'">
       <img src="${userData.img}" alt="card priview image">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
@@ -130,7 +130,7 @@ papers.addEventListener('click', function () {
   output.innerHTML = '';
   paperData.forEach((userData) => {
     output.innerHTML += `
-      <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?img=${userData.img}&tag=${userData.tag}&date=${userData.date}&title=${userData.title}&content=${userData.content}'">
+      <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?tag=${userData.tag}&date=${userData.date}&title=${userData.title}'">
       <img src="${userData.img}" alt="card priview image">
       <p>${userData.tag} | ${userData.date}</p>
       <p>${userData.title}</p>
