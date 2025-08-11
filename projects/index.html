@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="../src/components/header/header.scss" />
+    <link rel="stylesheet" href="../src/components/footer/footer.scss" />
   </head>
   <body>
+    <header class="gnb"></header>
+    <main class="main">
+      <section class="project">
+        <div class="project__title"><h2>PROJECTS</h2></div>
+        <div class="project__card">
+          <div class="card__text">
+            <p class="card__title">Project Name</p>
+            <p class="card__meta">참여자, 2024.5 ~ 2024.8</p>
+            <p class="card__content">프로젝트 내용</p>
+          </div>
+          <div class="card__img">
+            <img src="../src/assets/images/dummyImage.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
     <script src="script.js"></script>
+    <script src="../src/components/header/header.js"></script>
+    <script src="../src/components/footer/footer.js"></script>
   </body>
 </html>
