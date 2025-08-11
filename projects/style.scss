@@ -31,11 +31,9 @@ button {
 
 .project__title {
   margin: 0;
-  h2 {
-    font-family: $font-point;
-    font-size: 40px;
-    line-height: 48px;
-  }
+  font-family: $font-point;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 .project__content {

@@ -2,7 +2,7 @@ const data = [
   {
     name: 'MeetChat',
     participants: ['김지은', '박현우', '이서윤'],
-    duration: '2025.3~2025.6',
+    duration: '2025.3 ~ 2025.6',
     description: '실시간 채팅과 중간 지점 기반 장소 추천 기능을 결합한 모바일 앱',
     image: '../src/assets/images/dummyImage.jpg',
   },
@@ -10,7 +10,8 @@ const data = [
     name: 'WeatherToDo',
     participants: ['김지은', '정민호'],
     duration: '2025.6~2025.8',
-    description: '날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱',
+    description:
+      '날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 ',
     image: '../src/assets/images/dummyImage.jpg',
   },
   {
@@ -36,10 +37,10 @@ const data = [
   },
 ];
 
-const card = document.querySelector('.project__content');
+const cardList = document.querySelector('.project__content');
 
 data.forEach((userData) => {
-  card.innerHTML += `
+  cardList.innerHTML += `
   <div class="card">
             <div class="card__text">
               <p class="card__title">${userData.name}</p>
