@@ -38,11 +38,16 @@ button {
   }
 }
 
-.project__card {
+.project__content {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 60px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__text {
