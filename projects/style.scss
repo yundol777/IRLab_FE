@@ -46,11 +46,13 @@ button {
 .card {
   display: flex;
   justify-content: space-between;
+  gap: 60px;
 }
 
 .card__text {
   display: flex;
   flex-direction: column;
+  max-width: 730px;
   gap: 48px;
 }
 
@@ -64,9 +66,15 @@ button {
   font-size: 20px;
   font-weight: $bold;
   color: $gray-2;
+  line-height: 1.2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .card__img {
+  flex-shrink: 0;
   img {
     width: 100%;
     max-width: 369px;

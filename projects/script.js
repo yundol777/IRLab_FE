@@ -11,7 +11,7 @@ const data = [
     participants: ['김지은', '정민호'],
     duration: '2025.6~2025.8',
     description:
-      '날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 ',
+      '날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱 날씨 정보와 투두리스트를 결합한 개인 일정 관리 앱날씨 정보와 투두리스트를 결합한 개인 일',
     image: '../src/assets/images/dummyImage.jpg',
   },
   {
@@ -44,7 +44,7 @@ data.forEach((userData) => {
   <div class="card">
             <div class="card__text">
               <p class="card__title">${userData.name}</p>
-              <p class="card__meta">${userData.participants}, ${userData.duration}</p>
+              <p class="card__meta">${userData.participants.join('·')}, ${userData.duration}</p>
               <p class="card__content">${userData.description}</p>
             </div>
             <div class="card__img">
