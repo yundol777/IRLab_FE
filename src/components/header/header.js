@@ -12,7 +12,7 @@ gnb.innerHTML += `
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__item">
-<a href="#">PROJECTS</a>
+<a href="../projects/index.html">PROJECTS</a>
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__item">
@@ -20,7 +20,7 @@ gnb.innerHTML += `
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__item">
-<a href="#">TOPICS</a>
+<a href="../topics/index.html">TOPICS</a>
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__button">
