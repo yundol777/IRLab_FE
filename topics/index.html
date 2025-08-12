@@ -3,32 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topics | IR Lab</title>
     <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="../src/styles/common.scss" />
     <link rel="stylesheet" href="../src/components/header/header.scss" />
     <link rel="stylesheet" href="../src/components/footer/footer.scss" />
-    <title>Document</title>
   </head>
   <body>
     <header class="gnb"></header>
     <main class="main">
-      <section class="topic">
-        <div class="topic__title"><h2>TOPICS</h2></div>
-        <ul class="lnb__list">
-          <li class="lnb__item" id="all">
+      <section class="topics">
+        <h2 class="topics__title">TOPICS</h2>
+        <ul class="topics__menu">
+          <li class="topics__item" id="all">
             <button>ALL</button>
-            <span class="lnb__highlight"></span>
+            <span class="item__highlight"></span>
           </li>
-          <li class="lnb__item" id="events">
+          <li class="topics__item" id="events">
             <button>EVENTS</button>
-            <span class="lnb__highlight"></span>
+            <span class="item__highlight"></span>
           </li>
-          <li class="lnb__item" id="papers">
+          <li class="topics__item" id="papers">
             <button>PAPERS</button>
-            <span class="lnb__highlight"></span>
+            <span class="item__highlight"></span>
           </li>
         </ul>
-        <article id="topic__content"></article>
-        <div class="view__more"><button>View More +</button></div>
+        <article id="topics__content"></article>
+        <button class="view__more">View More +</button>
       </section>
     </main>
     <footer class="footer"></footer>

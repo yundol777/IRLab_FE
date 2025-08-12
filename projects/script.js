@@ -37,7 +37,7 @@ const data = [
   },
 ];
 
-const cardList = document.querySelector('.project__content');
+const cardList = document.querySelector('.projects__content');
 
 data.forEach((userData) => {
   cardList.innerHTML += `
