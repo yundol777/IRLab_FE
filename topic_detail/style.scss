@@ -2,18 +2,6 @@
 @use '../src/styles/font.scss' as *;
 @use '../src/styles/reset.scss' as *;
 
-p,
-a {
-  color: $gray-3;
-  font-family: $font-default;
-}
-
-button {
-  background: inherit;
-  border: none;
-  cursor: pointer;
-}
-
 .topic__header {
   display: flex;
   flex-direction: column;

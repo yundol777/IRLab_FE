@@ -2,6 +2,18 @@
 @use '../styles/reset.scss' as *;
 @use '../styles/variables.scss' as *;
 
+p,
+a {
+  color: $gray-3;
+  font-family: $font-default;
+}
+
+button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
 .main {
   display: flex;
   justify-content: center;

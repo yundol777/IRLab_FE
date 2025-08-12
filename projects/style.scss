@@ -2,18 +2,6 @@
 @use '../src/styles/reset.scss' as *;
 @use '../src/styles/variables.scss' as *;
 
-p,
-a {
-  color: $gray-3;
-  font-family: $font-default;
-}
-
-button {
-  background: inherit;
-  border: none;
-  cursor: pointer;
-}
-
 .section__content {
   width: 100%;
   display: flex;
