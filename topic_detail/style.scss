@@ -2,7 +2,7 @@
 @use '../src/styles/font.scss' as *;
 @use '../src/styles/reset.scss' as *;
 
-.topic__header {
+.topics__header {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -13,7 +13,7 @@
   }
 }
 
-.topic__back {
+.topics__back {
   :hover {
     span {
       &:nth-child(1) {
@@ -38,7 +38,7 @@
   }
 }
 
-.topic__back--style {
+.topics__back--style {
   display: flex;
   flex-direction: row;
   gap: 14px;
@@ -52,7 +52,7 @@
   padding-bottom: 16px;
 }
 
-.topic__main {
+.topics__main {
   display: flex;
   flex-direction: column;
   gap: 120px;
@@ -64,7 +64,7 @@
   }
 }
 
-.topic__meta {
+.topics__meta {
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -74,7 +74,7 @@
   }
 }
 
-.topic__content {
+.topics__content {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;

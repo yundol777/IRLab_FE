@@ -73,7 +73,7 @@ const data = [
   },
 ];
 
-const output = document.getElementById('topic__content');
+const output = document.getElementById('topics__content');
 const all = document.getElementById('all');
 const events = document.getElementById('events');
 const papers = document.getElementById('papers');
