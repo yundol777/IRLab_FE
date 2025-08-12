@@ -2,7 +2,14 @@
 @use '../src/styles/font.scss' as *;
 @use '../src/styles/reset.scss' as *;
 
-.lnb__list {
+.topics__title {
+  margin: 0;
+  font-family: $font-point;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.topics__menu {
   display: flex;
   gap: 32px;
   flex-direction: row;
@@ -17,7 +24,7 @@
   }
 }
 
-.lnb__item {
+.topics__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +35,7 @@
   height: 24px;
   position: relative;
 
-  .lnb__highlight {
+  .item__highlight {
     position: absolute;
     display: block;
     width: 100%;
@@ -41,13 +48,13 @@
     transition: transform 0.2s ease;
   }
 
-  &:hover .lnb__highlight {
+  &:hover .item__highlight {
     transform: scaleX(1);
     transform-origin: left;
   }
 
   &:active {
-    .lnb__highlight {
+    .item__highlight {
       background-color: $primary;
       opacity: 1;
       transform: scaleX(1);
@@ -118,10 +125,8 @@ article {
   justify-content: center;
   padding: 50px 0;
 
-  button {
-    font-size: 20px;
-    font-weight: $medium;
-    text-decoration-line: none;
-    cursor: pointer;
-  }
+  font-size: 20px;
+  font-weight: $medium;
+  text-decoration-line: none;
+  cursor: pointer;
 }

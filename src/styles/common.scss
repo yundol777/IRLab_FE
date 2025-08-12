@@ -17,16 +17,16 @@ button {
 .main {
   display: flex;
   justify-content: center;
-}
 
-.section {
-  max-width: 1160px;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 180px 32px;
-  gap: 60px;
+  section {
+    max-width: 1160px;
+    width: 100%;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    padding: 180px 32px;
+    gap: 60px;
+  }
 }
 
 .section__title {
