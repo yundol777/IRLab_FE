@@ -14,30 +14,6 @@ button {
   cursor: pointer;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-}
-
-.topic {
-  max-width: 1160px;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 180px 0;
-  gap: 60px;
-}
-
-.topic__title {
-  margin: 0;
-  h2 {
-    font-family: $font-point;
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
-
 .lnb__list {
   display: flex;
   gap: 32px;

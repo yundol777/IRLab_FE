@@ -1,0 +1,25 @@
+@use '../styles/font.scss' as *;
+@use '../styles/reset.scss' as *;
+@use '../styles/variables.scss' as *;
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  max-width: 1160px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 180px 32px;
+  gap: 60px;
+}
+
+.section__title {
+  margin: 0;
+  font-family: $font-point;
+  font-size: 40px;
+  line-height: 48px;
+}
