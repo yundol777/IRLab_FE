@@ -12,8 +12,8 @@
   <body>
     <header class="gnb"></header>
     <main class="main">
-      <div class="landing__banner">
-        <div class="landing__banner-content">
+      <section class="landing__banner">
+        <article class="landing__banner-content">
           <div class="landing__banner-texts">
             <p>Welcome to IR Lab</p>
             <p>Your one-stop resource for Information Retrieval research.</p>
@@ -22,37 +22,39 @@
             <button>Contact Us</button>
             <button>Learn More</button>
           </div>
-        </div>
-      </div>
-      <div class="landing__content">
-        <div class="project__section">
-          <header class="project__head">
-            <h1>Projects</h1>
-            <p>Highlights of our ongoing initiatives</p>
-            <div class="project__more" onclick="location.href='../topics/index.html'">
-              <span>Our Projects</span> <span>→</span>
-            </div>
-          </header>
-          <ul class="project__cards">
-            <li class="project__card">
-              <img src="../src/assets/images/dummyImage.jpg" alt="WE : UP 프로젝트 이미지" />
-              <p>WE : UP</p>
-            </li>
-            <li class="project__card">
-              <img src="../src/assets/images/dummyImage.jpg" alt="TRIMO 프로젝트 이미지" />
-              <p>TRIMO</p>
-            </li>
-          </ul>
-        </div>
-        <div class="topic__section">
-          <header class="topic__head">
-            <h1>TOPICS</h1>
-          </header>
-          <ul class="topic__cards">
-            <li id="data"></li>
-          </ul>
-        </div>
-        <div class="gallery__section">
+        </article>
+      </section>
+      <section class="landing__content">
+        <article class="landing__features">
+          <div class="project__section">
+            <header class="project__head">
+              <h1>Projects</h1>
+              <p>Highlights of our ongoing initiatives</p>
+              <div class="project__more" onclick="location.href='../topics/index.html'">
+                <span>Our Projects</span> <span>→</span>
+              </div>
+            </header>
+            <ul class="project__cards">
+              <li class="project__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="WE : UP 프로젝트 이미지" />
+                <p>WE : UP</p>
+              </li>
+              <li class="project__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="TRIMO 프로젝트 이미지" />
+                <p>TRIMO</p>
+              </li>
+            </ul>
+          </div>
+          <div class="topic__section">
+            <header class="topic__head">
+              <h1>TOPICS</h1>
+            </header>
+            <ul class="topic__cards">
+              <li id="data"></li>
+            </ul>
+          </div>
+        </article>
+        <article class="gallery__section">
           <header class="gallery__head">
             <h1>Gallery</h1>
           </header>
@@ -94,9 +96,9 @@
               </li>
             </ul>
           </div>
-        </div>
+        </article>
         <div alt="공백"></div>
-      </div>
+      </section>
     </main>
     <footer class="footer"></footer>
     <script src="script.js"></script>
