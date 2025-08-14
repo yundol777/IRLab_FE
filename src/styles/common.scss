@@ -18,7 +18,9 @@ button {
   display: flex;
   justify-content: center;
 
-  section {
+  .topics,
+  .topic,
+  .projects {
     max-width: 1160px;
     width: 100%;
     box-sizing: content-box;

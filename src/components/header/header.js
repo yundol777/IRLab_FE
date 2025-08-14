@@ -2,7 +2,7 @@ var gnb = document.querySelector('.gnb');
 
 gnb.innerHTML += `
 <nav class="gnb__bar">
-<div class="gnb__title">
+<div class="gnb__title" onclick="location.href='http://localhost:5173/landing/'">
 <img src="../src/assets/images/humanImage.jpg" alt="IR Lab logo" />
 <h1>IR Lab</h1>
 </div>

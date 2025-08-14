@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IR Lab</title>
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="../src/styles/common.scss" />
+    <link rel="stylesheet" href="../src/components/header/header.scss" />
+    <link rel="stylesheet" href="../src/components/footer/footer.scss" />
+  </head>
+  <body>
+    <header class="gnb"></header>
+    <main class="main">
+      <section class="landing__banner">
+        <article class="landing__banner-content">
+          <div class="landing__banner-texts">
+            <p>Welcome to IR Lab</p>
+            <p>Your one-stop resource for Information Retrieval research.</p>
+          </div>
+          <div class="landing__banner-buttons">
+            <button>Contact Us</button>
+            <button>Learn More</button>
+          </div>
+        </article>
+      </section>
+      <section class="landing__content">
+        <article class="landing__features">
+          <div class="project__section">
+            <header class="project__head">
+              <h1>Projects</h1>
+              <p>Highlights of our ongoing initiatives</p>
+              <div class="project__more" onclick="location.href='../topics/index.html'">
+                <span>Our Projects</span> <span>→</span>
+              </div>
+            </header>
+            <ul class="project__cards">
+              <li class="project__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="WE : UP 프로젝트 이미지" />
+                <p>WE : UP</p>
+              </li>
+              <li class="project__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="TRIMO 프로젝트 이미지" />
+                <p>TRIMO</p>
+              </li>
+            </ul>
+          </div>
+          <div class="topic__section">
+            <header class="topic__head">
+              <h1>TOPICS</h1>
+            </header>
+            <ul class="topic__cards">
+              <li id="data"></li>
+            </ul>
+          </div>
+        </article>
+        <article class="gallery__section">
+          <header class="gallery__head">
+            <h1>Gallery</h1>
+          </header>
+          <div class="gallery__cards">
+            <ul class="gallery__wrap">
+              <li class="gallery__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="TRIMO 프로젝트 이미지" />
+                <p>TRIMO</p>
+              </li>
+              <li class="gallery__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="TRIMO 프로젝트 이미지" />
+                <p>TRIMO</p>
+              </li>
+              <li class="gallery__card">
+                <img src="../src/assets/images/humanImage.jpg" alt="WE : UP 프로젝트 이미지" />
+                <p>WE : UP</p>
+              </li>
+              <li class="gallery__card">
+                <img src="../src/assets/images/humanImage.jpg" alt="WE : UP 프로젝트 이미지" />
+                <p>WE : UP</p>
+              </li>
+            </ul>
+            <ul class="gallery__wrap">
+              <li class="gallery__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="TRIMO 프로젝트 이미지" />
+                <p>TRIMO</p>
+              </li>
+              <li class="gallery__card">
+                <img src="../src/assets/images/dummyImage.jpg" alt="TRIMO 프로젝트 이미지" />
+                <p>TRIMO</p>
+              </li>
+              <li class="gallery__card">
+                <img src="../src/assets/images/humanImage.jpg" alt="WE : UP 프로젝트 이미지" />
+                <p>WE : UP</p>
+              </li>
+              <li class="gallery__card">
+                <img src="../src/assets/images/humanImage.jpg" alt="WE : UP 프로젝트 이미지" />
+                <p>WE : UP</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <div alt="공백"></div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+    <script src="../src/components/header/header.js"></script>
+    <script src="../src/components/footer/footer.js"></script>
+  </body>
+</html>
