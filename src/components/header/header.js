@@ -24,7 +24,7 @@ gnb.innerHTML += `
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__button">
-<a href="#">CONTACT</a>
+<a href="../contact/index.html">CONTACT</a>
 </li>
 </ul>
 </nav>
