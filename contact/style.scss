@@ -28,9 +28,8 @@
 
 .contact__info {
   display: flex;
-  padding: 0 80px;
   min-height: 100px;
-  gap: 100px;
+  gap: 60px;
 
   .material-symbols-outlined {
     font-variation-settings:
@@ -45,6 +44,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  flex: 1;
 }
 
 .info__title {
@@ -75,5 +75,6 @@
 
 .iwContent {
   padding: 5px;
-  padding-left: 35px;
+  padding-left: 10px;
+  font-size: 14px;
 }
