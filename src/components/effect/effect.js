@@ -13,3 +13,8 @@ const scrollFunc = function () {
 
 window.addEventListener('load', scrollFunc);
 window.addEventListener('scroll', scrollFunc);
+window.addEventListener('click', move__scroll);
+
+function move__scroll() {
+  document.querySelector('.project__section').scrollIntoView({ behavior: 'smooth' });
+}
