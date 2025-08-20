@@ -37,6 +37,25 @@ const data = [
   },
 ];
 
+const gallery_data = [
+  {
+    img: '../src/assets/images/dummyImage.jpg',
+    title: 'TRIMO',
+  },
+  {
+    img: '../src/assets/images/humanImage.jpg',
+    title: 'HANDS UP',
+  },
+  {
+    img: '../src/assets/images/dummyImage.jpg',
+    title: 'BRUSH YOUR TEETH',
+  },
+  {
+    img: '../src/assets/images/humanImage.jpg',
+    title: 'WE : UP',
+  },
+];
+
 const output = document.getElementById('data');
 
 data.forEach((userData) => {
@@ -46,5 +65,29 @@ data.forEach((userData) => {
     <p>${userData.tag} | ${userData.date}</p>
     <h2>${userData.title}</h2>
     </div>
+    `;
+});
+
+const gallery_cards = document.querySelector('.gallery__cards');
+
+gallery_data.forEach((userData) => {
+  gallery_cards.innerHTML += `
+    <ul class="gallery__wrap">
+        <li class="gallery__card">
+            <img src="${userData.img}">
+            <p>${userData.title}</p>
+        </li>
+    </ul>
+    `;
+});
+
+gallery_data.forEach((userData) => {
+  gallery_cards.innerHTML += `
+    <ul class="gallery__wrap">
+        <li class="gallery__card">
+            <img src="${userData.img}">
+            <p>${userData.title}</p>
+        </li>
+    </ul>
     `;
 });

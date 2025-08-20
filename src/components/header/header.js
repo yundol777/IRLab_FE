@@ -3,7 +3,7 @@ var gnb = document.querySelector('.gnb');
 gnb.innerHTML += `
 <nav class="gnb__bar">
 <div class="gnb__title" onclick="location.href='http://localhost:5173/landing/'">
-<img src="../src/assets/images/humanImage.jpg" alt="IR Lab logo" />
+<img src="../src/assets/images/IR-logo.jpg" alt="IR Lab logo" />
 <h1>IR Lab</h1>
 </div>
 <ul class="gnb__list">
@@ -24,7 +24,7 @@ gnb.innerHTML += `
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__button">
-<a href="#">CONTACT</a>
+<a href="../contact/index.html">CONTACT</a>
 </li>
 </ul>
 </nav>
