@@ -41,7 +41,7 @@ const cardList = document.querySelector('.projects__content');
 
 data.forEach((userData) => {
   cardList.innerHTML += `
-  <div class="card">
+  <div class="card scroll up">
             <div class="card__text">
               <p class="card__title">${userData.name}</p>
               <p class="card__meta">${userData.participants.join('·')}, ${userData.duration}</p>

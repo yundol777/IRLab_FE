@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../src/styles/common.scss" />
     <link rel="stylesheet" href="../src/components/header/header.scss" />
     <link rel="stylesheet" href="../src/components/footer/footer.scss" />
+    <link rel="stylesheet" href="../src/components/effect/effect.scss" />
   </head>
   <body>
     <header class="gnb"></header>
@@ -20,7 +21,7 @@
           </div>
           <div class="landing__banner-buttons fade">
             <button onclick="location.href='../contact/index.html'">Contact Us</button>
-            <button>Learn More</button>
+            <button id="move" onclick="move__scroll()">Learn More</button>
           </div>
         </article>
       </section>
@@ -28,13 +29,16 @@
         <article class="landing__features">
           <div class="project__section">
             <header class="project__head">
-              <h1>Projects</h1>
-              <p>Highlights of our ongoing initiatives</p>
-              <div class="project__more" onclick="location.href='../topics/index.html'">
+              <h1 class="scroll up">Projects</h1>
+              <p class="scroll up">Highlights of our ongoing initiatives</p>
+              <div
+                class="project__more scroll left"
+                onclick="location.href='../projects/index.html'"
+              >
                 <span>Our Projects</span> <span>→</span>
               </div>
             </header>
-            <ul class="project__cards">
+            <ul class="project__cards scroll up">
               <li class="project__card">
                 <img src="../src/assets/images/dummyImage.jpg" alt="WE : UP 프로젝트 이미지" />
                 <p>WE : UP</p>
@@ -46,7 +50,7 @@
             </ul>
           </div>
           <div class="topic__section">
-            <header class="topic__head">
+            <header class="topic__head scroll up">
               <h1>TOPICS</h1>
             </header>
             <ul class="topic__cards">
@@ -55,17 +59,23 @@
           </div>
         </article>
         <article class="gallery__section">
-          <header class="gallery__head">
+          <header class="gallery__head scroll up">
             <h1>Gallery</h1>
           </header>
-          <div class="gallery__cards"></div>
+          <div class="gallery__cards scroll up"></div>
         </article>
         <div alt="공백"></div>
       </section>
     </main>
     <footer class="footer"></footer>
     <script src="script.js"></script>
+    <script>
+      function move__scroll() {
+        document.querySelector('.project__section').scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
     <script src="../src/components/header/header.js"></script>
     <script src="../src/components/footer/footer.js"></script>
+    <script src="../src/components/effect/effect.js"></script>
   </body>
 </html>
