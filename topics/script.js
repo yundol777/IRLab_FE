@@ -97,7 +97,7 @@ all.addEventListener('click', function () {
 data.forEach((userData) => {
   all.classList.add('lnb__fix');
   output.innerHTML += `
-    <div class="topic__card" onclick="location.href='http://localhost:5173/topic_detail/index.html?tag=${userData.tag}&date=${userData.date}&title=${userData.title}'">
+    <div class="topic__card scroll up" onclick="location.href='http://localhost:5173/topic_detail/index.html?tag=${userData.tag}&date=${userData.date}&title=${userData.title}'">
     <img src="${userData.img}" alt="card priview image">
     <p>${userData.tag} | ${userData.date}</p>
     <p>${userData.title}</p>

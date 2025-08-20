@@ -60,7 +60,7 @@ const output = document.getElementById('data');
 
 data.forEach((userData) => {
   output.innerHTML += `
-    <div class="card black__filter">
+    <div class="card black__filter scroll up">
     <img src="${userData.img}">
     <p>${userData.tag} | ${userData.date}</p>
     <h2>${userData.title}</h2>

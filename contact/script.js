@@ -22,9 +22,6 @@ kakao.maps.load(function () {
 
   marker.setMap(map);
 
-  var mapTypeControl = new kakao.maps.MapTypeControl(); //일반지도, 스카이뷰 변환
-  map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-
   var zoomControl = new kakao.maps.ZoomControl(); //지도 확대 축소 표시
   map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 

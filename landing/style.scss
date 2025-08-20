@@ -83,11 +83,6 @@ body {
   }
 }
 
-.fade {
-  position: relative;
-  animation: reveal 1s;
-}
-
 .landing__content {
   display: flex;
   flex-direction: column;
@@ -267,7 +262,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 80px;
   padding: 60px 0;
 }
 
@@ -400,16 +395,5 @@ body {
   .project__cards {
     flex-direction: column;
     width: 100%;
-  }
-}
-
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
   }
 }
