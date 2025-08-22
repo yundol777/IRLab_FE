@@ -130,3 +130,19 @@ article {
   text-decoration-line: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .topic__card {
+    width: 100%;
+    img {
+      height: 100%;
+      max-height: 441px;
+    }
+    p:nth-child(2) {
+      font-size: 18px;
+    }
+    p:nth-child(3) {
+      font-size: 24px;
+    }
+  }
+}

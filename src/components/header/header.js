@@ -27,7 +27,7 @@ gnb.innerHTML += `
 <a href="../contact/index.html">CONTACT</a>
 </li>
 </ul>
-<button class="mobile__button" onclick="location.href='../src/components/header/header.html'"><img src="../assets/images/menu-logo.png" alt="menu-logo" /></button>
+<button class="mobile__button" onclick="location.href='../src/components/header/header.html'"><img src="../src/assets/images/menu_logo.png" alt="menu-logo" /></button>
 </nav>
 `;
 
