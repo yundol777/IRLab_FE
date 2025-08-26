@@ -1,0 +1,80 @@
+@use '../src/styles/variables.scss' as *;
+@use '../src/styles/font.scss' as *;
+@use '../src/styles/reset.scss' as *;
+
+main {
+  width: 100%;
+  max-width: 1160px;
+  margin: 180px auto;
+  padding: 0 32px;
+  box-sizing: content-box;
+  font-family: $font-default;
+  color: $gray-3;
+}
+
+.professor {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.professor__title {
+  font-family: $font-point;
+  font-size: 40px;
+}
+
+.professor__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.professor__name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  hr {
+    margin: 0;
+    width: 40px;
+    height: 3px;
+    background: $primary;
+  }
+
+  &--ko {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+  }
+
+  &--en {
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray-2;
+  }
+}
+
+.professor__image {
+  width: 265px;
+  height: 330px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.professor__info {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.professor__subtitle {
+}
