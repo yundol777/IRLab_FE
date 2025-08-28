@@ -1,6 +1,6 @@
 const data = [
   {
-    id: 401,
+    id: 1,
     link: 'https://arxiv.org/abs/2504.10001',
     title: '시간 기반 생성 추천 시스템의 고도화',
     summary:
@@ -9,8 +9,8 @@ const data = [
     name: '이선경, 박성민, 윤민철, 이종욱',
   },
   {
-    id: 402,
-    link: 'https://arxiv.org/abs/2504.10002',
+    id: 2,
+    link: null,
     title: '다중 관점 기반 패시지 재순위화 기법',
     summary:
       '대규모 언어모델을 활용하여 패시지 재순위화를 수행하는 다중 관점 기반 기법을 제안한다. 다양한 데이터셋에서 최신 성능을 달성하였다.',
@@ -18,8 +18,8 @@ const data = [
     name: '나정우, 권준, 최은성, 이종욱',
   },
   {
-    id: 403,
-    link: 'https://arxiv.org/abs/2504.10003',
+    id: 3,
+    link: null,
     title: '검색 증강 생성에서의 충돌 최소화 전략',
     summary:
       '검색 증강 생성 과정에서 모델의 기존 지식과 외부 검색 결과 간 충돌을 줄이는 새로운 프롬프팅 기법을 제안한다.',
@@ -27,7 +27,7 @@ const data = [
     name: '최은성, 박준, 이혜리, 이종욱',
   },
   {
-    id: 404,
+    id: 4,
     link: 'https://arxiv.org/abs/2409.20001',
     title: '연구 성과 공유를 위한 웹 아카이브 시스템',
     summary:
@@ -36,8 +36,8 @@ const data = [
     name: '정윤석, 김철수, 이민지',
   },
   {
-    id: 405,
-    link: 'https://arxiv.org/abs/2410.20002',
+    id: 5,
+    link: null,
     title: '블록체인 기반 학습 이력 관리 모델',
     summary:
       '블록체인을 활용하여 학습 이력을 안전하게 관리하는 모델을 제안한다. 스마트 계약을 통해 이력 검증 과정을 자동화하였다.',
@@ -66,7 +66,7 @@ data.forEach((research) => {
     <div class="research__item">
         <div class="research__title">
             <p>${research.title}</p>
-            <img class="research__link" src="../src/assets/icons/external-link.svg" />
+            ${research.link ? `<img class="research__link" src="../src/assets/icons/external-link.svg" />` : ``}
         </div>
         <div class="research__content">
             <p>${research.summary}</p>
