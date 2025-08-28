@@ -1,0 +1,79 @@
+@use '../src/styles/font.scss' as *;
+@use '../src/styles/reset.scss' as *;
+@use '../src/styles/variables.scss' as *;
+
+.research__header {
+  margin: 0;
+  font-family: $font-point;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.research__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  font-family: $font-default;
+}
+
+.research__year {
+  margin: 16px;
+  padding: 12px 0;
+
+  h3 {
+    font-size: 24px;
+    font-weight: $bold;
+    color: $gray-3;
+  }
+}
+
+.research__item {
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.research__title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+    font-weight: $bold;
+    color: $gray-3;
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+    color: $gray-2;
+    cursor: pointer;
+  }
+}
+
+.research__content {
+  p {
+    font-size: 18px;
+    color: $gray-2;
+    font-weight: $medium;
+  }
+}
+
+.research__info {
+  display: flex;
+  gap: 16px;
+
+  p {
+    font-size: 18px;
+    color: $gray-2;
+    font-weight: $medium;
+  }
+}
+
+.research__date {
+  flex-shrink: 0;
+}
