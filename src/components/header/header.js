@@ -8,7 +8,7 @@ gnb.innerHTML += `
 </div>
 <ul class="gnb__list">
 <li class="gnb__item">
-<a href="#">MEMBERS</a>
+<a href="../members/index.html">MEMBERS</a>
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__item">
