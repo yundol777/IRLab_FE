@@ -16,7 +16,7 @@ gnb.innerHTML += `
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__item">
-<a href="#">RESEARCH</a>
+<a href="../research/index.html">RESEARCH</a>
 <span class="gnb__underline"></span>
 </li>
 <li class="gnb__item">
