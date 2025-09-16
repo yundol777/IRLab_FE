@@ -1,0 +1,176 @@
+@use '../src/styles/variables.scss' as *;
+@use '../src/styles/font.scss' as *;
+@use '../src/styles/reset.scss' as *;
+
+.main .members {
+  gap: 180px;
+  font-family: $font-default;
+}
+
+.professor {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.professor__title {
+  font-family: $font-point;
+  font-size: 40px;
+}
+
+.professor__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.professor__name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  hr {
+    margin: 0;
+    width: 40px;
+    height: 3px;
+    background: $primary;
+  }
+
+  &--ko {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+  }
+
+  &--en {
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray-2;
+  }
+}
+
+.professor__image {
+  width: 265px;
+  height: 330px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.professor__info {
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.professor__papers {
+  flex: 1;
+}
+
+.professor__subtitle {
+  font-weight: $semibold;
+}
+
+.students {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.students__title {
+  font-family: $font-point;
+  font-size: 40px;
+}
+
+.students__list {
+  width: 100%;
+
+  display: grid;
+  justify-content: flex-end;
+  grid-template-columns: repeat(2, 200px);
+  gap: 16px;
+}
+
+.students__item {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .students__info {
+      display: flex;
+    }
+  }
+}
+
+.students__profile {
+  width: 200px;
+  height: 200px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.students__info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -216px;
+
+  width: 200px;
+  height: 200px;
+  padding: 16px 0;
+
+  flex-direction: column;
+  gap: 8px;
+
+  text-align: end;
+  background-color: $gray-1;
+}
+
+.students__name {
+  font-size: 20px;
+  font-weight: $bold;
+}
+
+.students__detail {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+
+  p {
+    color: $gray-2;
+    font-weight: $bold;
+  }
+}
+
+.students__portfolio {
+  color: $gray-2;
+  font-weight: $bold;
+  font-size: 14px;
+}
+
+.students__email {
+  font-weight: $bold;
+  font-size: 14px;
+}

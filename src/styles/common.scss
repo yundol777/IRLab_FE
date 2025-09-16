@@ -19,7 +19,10 @@ button {
   justify-content: center;
 
   .topics,
-  .projects {
+  .topic,
+  .projects,
+  .research,
+  .members {
     max-width: 1160px;
     width: 100%;
     box-sizing: content-box;
