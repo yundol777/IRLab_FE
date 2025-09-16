@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/common.scss" />
+    <link rel="stylesheet" href="../src/components/header/header.scss" />
+    <link rel="stylesheet" href="../src/components/footer/footer.scss" />
+    <link rel="stylesheet" href="../src/components/effect/effect.scss" />
+    <link rel="stylesheet" href="style.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="gnb"></header>
+
+    <main class="main">
+      <section class="members">
+        <section class="professor">
+          <h2 class="professor__title">PROFESSOR</h2>
+          <div class="professor__container scroll up">
+            <div class="professor__name">
+              <hr />
+              <p class="professor__name--ko">선복근</p>
+              <p class="professor__name--en">Bokkeun Sun</p>
+            </div>
+
+            <div class="professor__image">
+              <img src="../src/assets/images/humanImage.jpg" alt="professor Bokkeun Sun" />
+            </div>
+
+            <div class="professor__info">
+              <div class="professor__education">
+                <h3 class="professor__subtitle">학력</h3>
+                <p>호서대 컴퓨터 공학 (공학박사)</p>
+                <p>호서대 컴퓨터 응용 기술 (공학석사)</p>
+                <p>호서대 컴퓨터공학 (공학사)</p>
+              </div>
+
+              <div class="professor__papers">
+                <h3 class="professor__subtitle">논문</h3>
+                <p>인터넷 뉴스 데이터 추출을 위한 미들웨어 설계 및 적용</p>
+                <p>한국컴퓨터정보학회논문지, 21권, 4호, pp.55~62, 2016.04</p>
+                <p>공과대학생 공간시각화능력과 학업성취 간 관계 연구</p>
+                <p>공학교육연구, 18권, 5호, pp.42-50, 2015.09</p>
+              </div>
+
+              <div class="professor__email">
+                <h3 class="professor__subtitle">E-mail</h3>
+                <p>bksun@hoseo.edu</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="students">
+          <h2 class="students__title">MEMBER</h2>
+          <div class="students__list scroll up"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="script.js"></script>
+    <script src="../src/components/header/header.js"></script>
+    <script src="../src/components/footer/footer.js"></script>
+    <script src="../src/components/effect/effect.js"></script>
+  </body>
+</html>

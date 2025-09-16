@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topics | IR Lab</title>
+    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="../src/styles/common.scss" />
+    <link rel="stylesheet" href="../src/components/header/header.scss" />
+    <link rel="stylesheet" href="../src/components/footer/footer.scss" />
+    <link rel="stylesheet" href="../src/components/effect/effect.scss" />
+  </head>
+  <body>
+    <header class="gnb"></header>
+    <main class="main">
+      <section class="topics">
+        <h2 class="topics__title">TOPICS</h2>
+        <ul class="topics__menu">
+          <li class="topics__item" id="all">
+            <button>ALL</button>
+            <span class="item__highlight"></span>
+          </li>
+          <li class="topics__item" id="events">
+            <button>EVENTS</button>
+            <span class="item__highlight"></span>
+          </li>
+          <li class="topics__item" id="papers">
+            <button>PAPERS</button>
+            <span class="item__highlight"></span>
+          </li>
+        </ul>
+        <article id="topics__content"></article>
+        <!-- <button class="view__more">View More +</button> -->
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./script.js"></script>
+    <script src="../src/components/header/header.js"></script>
+    <script src="../src/components/footer/footer.js"></script>
+    <script src="../src/components/effect/effect.js"></script>
+  </body>
+</html>
