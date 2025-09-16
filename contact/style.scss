@@ -78,3 +78,10 @@
   padding-left: 10px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .contact__info {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

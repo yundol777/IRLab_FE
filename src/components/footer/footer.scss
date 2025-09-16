@@ -35,3 +35,17 @@
     line-height: 28px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    justify-content: flex-start;
+  }
+  .footer__txt {
+    flex-direction: column;
+    gap: 0px;
+    p {
+      align-items: flex-start;
+      font-size: 14px;
+    }
+  }
+}
